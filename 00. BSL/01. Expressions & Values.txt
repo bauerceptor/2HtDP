@@ -1,0 +1,10 @@
+; here we evaluate the hypontuse of a triangle with base 4 and perpendicular 3
+(sqrt(+ (sqr 4) (sqr 3)))
+
+
+; a simple image program
+(require 2htdp/image)
+
+(overlay (circle 10 "solid" "red")
+       (circle 20 "solid" "yellow")
+       (circle 30 "solid" "green"))

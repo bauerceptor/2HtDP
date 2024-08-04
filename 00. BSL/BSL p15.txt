@@ -1,0 +1,15 @@
+
+;; function-writing-starter.rkt
+
+; 
+; PROBLEM:
+; 
+; Write a function that consumes two numbers and produces the larger of the two. 
+; 
+
+(define (foo m n)
+  (if (> m n)
+      m
+      n))
+
+(foo 3 2)
