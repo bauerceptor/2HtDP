@@ -1,0 +1,25 @@
+; 
+; Problem:
+; 
+; Desgin a function called yell that consumes strings like "hello"
+; and adds "!" to produce strings like "hello!".
+; 
+; Remember, when we say DESIGN, we mean follow the recipe.
+; 
+; Leave behind the commented out versions of the stub and template.
+
+
+;; String -> String
+;; add "!" to the end of str
+
+(check-expect (yell "you") "you!")
+(check-expect (yell "") "!")
+(check-expect (yell "Sunday today") "Sunday today!")
+
+;(define (yell str) "")      ; this is a stub
+
+;(define (yell str)
+;  (... str))
+
+(define (yell str)
+  (string-append str "!"))

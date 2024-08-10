@@ -1,0 +1,28 @@
+; 
+; Problem:
+; 
+; DESIGN a function that consumes an image and determines whether the
+; image is tall.
+; 
+
+(require 2htdp/image)
+
+;; Image -> Boolean
+;; produces "true" if the height of an image is longer than its width
+
+(check-expect (tall? (rectangle 20 10 "solid" "red")) false)
+(check-expect (tall? (rectangle 30 50 "solid" "purple")) true)
+(check-expect (tall? (rectangle 10 10 "solid" "yellow")) false)
+(check-expect (tall? (square 4 "solid" "orange")) false)
+
+
+;(define (tall? img) false)     ; stub
+
+;(define (tall? img)           ; template
+;  (... bool))
+
+
+(define (tall? img)
+  (> (image-height img)
+     (image-width img))
+)

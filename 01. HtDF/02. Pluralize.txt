@@ -1,0 +1,23 @@
+; 
+; Problem:
+; 
+; Design a function that pluralizes a given word.
+; (Pluralize means to convert the word to its plural form.)
+; For simplicity you may assume that just adding s is enough to pluralize a word.
+
+
+;; String -> String
+;; takes a word and pluralizes it by adding 's' at end of that word
+
+(check-expect (pluralize "book") "books")
+(check-expect (pluralize "") "s")
+(check-expect (pluralize "me") "mes")
+
+
+;(define (pluralize s) "")      ; this is a stub
+
+;(define (pluralize s)
+;  (... s))
+
+(define (pluralize s)
+  (string-append s "s"))

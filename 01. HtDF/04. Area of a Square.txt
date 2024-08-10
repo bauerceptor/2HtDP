@@ -1,0 +1,22 @@
+; 
+; Problem:
+; 
+; DESIGN a function called area that consumes the length of one side
+; of a square and produces the area of the square.
+
+
+;; Number -> Number
+;; returns the area of a square based on the input length (n) of its one side
+
+(check-expect (area 4) 16)
+(check-expect (area 3.3) 10.89)
+(check-expect (area 1) 1)
+
+
+;(define (area n) 0)    ; stub
+
+;(define (area n)      ; template
+;  (... n))
+
+(define (area n)
+  (* n n))
